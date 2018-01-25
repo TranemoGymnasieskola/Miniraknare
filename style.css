@@ -2,13 +2,6 @@ body {
 	background-color: #16a085;
 }
 
-/*svg {
-    border: 1px solid;
-    position: absolute;
-    left: 30%;
-    text-align: center;
-} */
-
 .ScoreBoard {
 	color: white;
 	float: left;
@@ -24,8 +17,8 @@ body {
     position: absolute;
     left: 30%;
     text-align: center;
-    width: 225px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(1,auto);
@@ -36,6 +29,46 @@ output {
 	text-align: right;
 }
 #equal {
-    grid-column: 2 / 3;
-    grid-row: 4 /3;
+    grid-column: 4;
+    grid-row: 6;
 }
+
+#division {
+    grid-column: 4;
+    grid-row: 2;
+
+}
+
+#plus {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#minus {
+    grid-column: 4;
+    grid-row: 4;
+
+}
+
+#multiplication {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#transform {
+
+}
+
+#comma {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#reset {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+
+
+
