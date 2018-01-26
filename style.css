@@ -56,19 +56,31 @@ output {
 }
 
 #transform {
+    grid-column: 3;
+    grid-row: 6;
 
 }
 
 #comma {
     grid-column: 1;
-    grid-row: 5;
-}
-
-#reset {
-    grid-column: 3;
     grid-row: 6;
 }
 
+
+#reset {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#percent {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#parenthesis {
+    grid-column: 1;
+    grid-row: 2;
+}
 
 
 
