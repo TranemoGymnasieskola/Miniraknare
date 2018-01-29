@@ -31,28 +31,33 @@ output {
 #equal {
     grid-column: 4;
     grid-row: 6;
+    background-color: orange;
 }
 
 #division {
     grid-column: 4;
     grid-row: 2;
+    background-color: orange;
 
 }
 
 #plus {
     grid-column: 4;
     grid-row: 5;
+    background-color: orange;
 }
 
 #minus {
     grid-column: 4;
     grid-row: 4;
+    background-color: orange;
 
 }
 
 #multiplication {
     grid-column: 4;
     grid-row: 3;
+    background-color: orange;
 }
 
 #transform {
@@ -70,17 +75,65 @@ output {
 #reset {
     grid-column: 3;
     grid-row: 2;
+    background-color: #abb2b9;
+    color: #fff;
 }
 
 #percent {
     grid-column: 2;
     grid-row: 2;
+    background-color: #abb2b9;
+    color: #fff;
 }
 
-#parenthesis {
+#Off {
     grid-column: 1;
     grid-row: 2;
+    background-color: #abb2b9;
+    color: #fff;
 }
+
+#n7 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#n8 {
+  grid-column: 2;
+  grid-row: 3;
+}
+#n9 {
+  grid-column: 3;
+  grid-row: 3;
+}
+#n4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+#n5 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#n6 {
+  grid-column: 3;
+  grid-row: 4;
+}
+#n1 {
+  grid-column: 1;
+  grid-row: 5;
+}
+#n2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+#n3 {
+  grid-column: 3;
+  grid-row: 5;
+}
+#n0 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
 
 
 
