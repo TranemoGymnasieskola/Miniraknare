@@ -9,7 +9,7 @@ let btn = document.createElement("button");
     calculator.appendChild(btn);
 }
 let stack = [];
-stack.length = 9;
+   // stack.length = 9;
 const output = document.getElementsByTagName("output")[0];
 
 let operand = [];
@@ -20,18 +20,26 @@ calculator.addEventListener ("click", (e)=> {
 	if (btn.className === "number") {
 		stack.push(btn.innerHTML);
 		// console.log(stack);
-	} else if (btn ===  document.getElementById('plus')) {
+	} else if (btn ===  document.getElementById("plus")) {
+        operand.push(+stack.join(""));
 		operand.push(btn.innerHTML);
 		console.log(operand);
+	} else if (btn === document.getElementById("equal")) {
+		let answer = eval(stack.join(""));
+		console.log(answer);
 	}
 	doOutput();
 });
+
 const doOutput = () => {
 	let text = stack.join("");
 	let disText = text.substring(0, 9);
 	output.value = disText;
 };
 
+function resetButton() {
+	
+}
 
 /* Ex. 3,2,1 behöver bli 321
 
@@ -45,7 +53,9 @@ Array.join(arr)   join gör det till en string
 
 Om plustecken nedtryckt
 Konvertera strecken till sträng (görs med: join) och sedan till number (görs med: +)
-lägg "stacken" i array operands. */
+lägg "stacken" i array operands. 
+
+EVAL*/
 
 
 
