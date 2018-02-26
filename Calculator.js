@@ -22,10 +22,34 @@ calculator.addEventListener ("click", (e)=> {
 		// console.log(stack);
 	} else if (btn ===  document.getElementById("plus")) {
         operand.push(+stack.join(""));
-		operand.push(btn.innerHTML);
+        stack = [];
+		operand.push("+");
 		console.log(operand);
+
+	} else if (btn ===  document.getElementById("minus")) {
+        operand.push(+stack.join(""));
+        stack = [];
+		operand.push("-");
+		console.log(operand);
+
+	} else if (btn ===  document.getElementById("multiplication")) {
+        operand.push(+stack.join(""));
+        stack = [];
+		operand.push("*");
+		console.log(operand);
+
+	} else if (btn ===  document.getElementById("division")) {
+        operand.push(+stack.join(""));
+        stack = [];
+		operand.push("/");
+		console.log(operand);
+
 	} else if (btn === document.getElementById("equal")) {
-		let answer = eval(stack.join(""));
+        operand.push(+stack.join(""));
+        stack = [];
+        let tempString = operand.join("");
+		console.log(tempString);
+		let answer = eval(tempString);
 		console.log(answer);
 	}
 	doOutput();
