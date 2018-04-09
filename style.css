@@ -12,7 +12,7 @@ body {
 #calculator {
 	background-color: #a2d9ce;
     border: 3px solid;
-    border-color: #138d75;
+    border-color: #2a8270;
     position: absolute;
     left: 34%;
     text-align: center;
@@ -85,7 +85,7 @@ output {
     color: #fff;
 }
 
-#Off {
+#Pi {
     grid-column: 1;
     grid-row: 2;
     background-color: #abb2b9;

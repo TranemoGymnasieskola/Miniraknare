@@ -1,7 +1,9 @@
 const calculator = document.getElementById("calculator");
 
+// SKAPAR SIFFRORNA
 for (let i=0; i<10; i++) {
 
+// SKAPAR KNAPPARNA	
 let btn = document.createElement("button");
     btn.id = "n" + i;
     btn.innerHTML = i;
@@ -9,11 +11,15 @@ let btn = document.createElement("button");
     calculator.appendChild(btn);
 }
 let stack = [];
-   // stack.length = 9;
+ 
+// GÖR SÅ ATT DET STÅR EN NOLLA PÅ PLATSEN FÖR SIFFRORNA
 const output = document.getElementsByTagName("output")[0];
 
 let operand = [];
 
+//let comma = [];
+
+// GÖR SÅ ATT DET DYKER UPP EN SIFFRA NÄR MAN TRYCKER PÅ DEN OCH ATT TALEN BERÄKNAS.
 calculator.addEventListener ("click", (e)=> {
 	let btn = e.target;
 	// console.log(btn);
@@ -44,26 +50,57 @@ calculator.addEventListener ("click", (e)=> {
 		operand.push("/");
 		console.log(operand);
 
+	/*} else if (btn ===  document.getElementById("comma")) {
+        operand.push(+stack.join(""));
+		operand.push(".");		
+        stack = [];
+		console.log(operand); */
+
+
+
+    /*}else if (btn === document.getElementById("Pi")) {
+		//operand.push(+stack.join(""));
+		stack = [];
+		operand.push(3.14159265359);
+		console.log(operand); */
+
 	} else if (btn === document.getElementById("equal")) {
         operand.push(+stack.join(""));
         stack = [];
         let tempString = operand.join("");
 		console.log(tempString);
 		let answer = eval(tempString);
-		console.log(answer);
-	}
+		// console.log(answer);
+		stack.push(answer);
+	} 
 	doOutput();
 });
 
+// HÄNGER IHOP MED FUNKTIONEN OVAN OCH GÖR SÅ ATT SAKER VISAS.
 const doOutput = () => {
 	let text = stack.join("");
-	let disText = text.substring(0, 9);
+	let disText = text.substring(0, 20);
 	output.value = disText;
 };
 
-function resetButton() {
-	
-}
+// NOLLSTÄLLER MINIRÄKNAREN
+let reset = document.getElementById("reset");
+
+reset.addEventListener("click", (e) => {
+	stack = [];
+	operand = [];
+});
+
+// ÄNDRAR TALET TILL ATT VARA NEGATIVT/POSITIVT
+let convert = document.getElementById("convert");
+
+convert.addEventListener("click", (event) => {
+	stack[0] *= -1;
+
+});
+
+
+
 
 /* Ex. 3,2,1 behöver bli 321
 
