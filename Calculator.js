@@ -65,6 +65,18 @@ calculator.addEventListener ("click", (e)=> {
 		operand.push(3.14159265359);
 		console.log(operand); */
 
+
+    // NOLLSTÄLLER MINIRÄKNAREN
+	} else if (btn === document.getElementById("reset")) {
+		stack = [];
+		operand = [];
+		display.innerHTML = "0";
+
+
+	} else if (btn === document.getElementById("convert")) {
+		stack[0] *= -1;
+
+
 	} else if (btn === document.getElementById("equal")) {
         operand.push(+stack.join(""));
         stack = [];
@@ -73,9 +85,10 @@ calculator.addEventListener ("click", (e)=> {
 		let answer = eval(tempString);
 		// console.log(answer);
 		stack.push(answer);
+		if (btn != reset) {
 	} 
 	doOutput();
-});
+}});
 
 // HÄNGER IHOP MED FUNKTIONEN OVAN OCH GÖR SÅ ATT SAKER VISAS.
 const doOutput = () => {
@@ -83,23 +96,6 @@ const doOutput = () => {
 	let disText = text.substring(0, 20);
 	output.value = disText;
 };
-
-// NOLLSTÄLLER MINIRÄKNAREN
-let reset = document.getElementById("reset");
-
-reset.addEventListener("click", (e) => {
-	stack = [];
-	operand = [];
-	display.innerHTML = "0";
-});
-
-
-// ÄNDRAR TALET TILL ATT VARA NEGATIVT/POSITIVT
-let convert = document.getElementById("convert");
-
-convert.addEventListener("click", (event) => {
-	stack[0] *= -1;
-});
 
 
 
@@ -129,4 +125,25 @@ EVAL*/
 
 Måste kunna hantera var
 */
+
+
+
+
+// NOLLSTÄLLER MINIRÄKNAREN
+/*let reset = document.getElementById("reset");
+
+reset.addEventListener("click", (e) => {
+	stack = [];
+	operand = [];
+	display.innerHTML = "0";
+});
+*/
+
+
+// ÄNDRAR TALET TILL ATT VARA NEGATIVT/POSITIVT
+/*let convert = document.getElementById("convert");
+
+convert.addEventListener("click", (event) => {
+	stack[0] *= -1;
+});  */
 
