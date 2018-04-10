@@ -1,4 +1,5 @@
 const calculator = document.getElementById("calculator");
+const display    = document.getElementById("display");
 
 // SKAPAR SIFFRORNA
 for (let i=0; i<10; i++) {
@@ -89,14 +90,15 @@ let reset = document.getElementById("reset");
 reset.addEventListener("click", (e) => {
 	stack = [];
 	operand = [];
+	display.innerHTML = "0";
 });
+
 
 // ÄNDRAR TALET TILL ATT VARA NEGATIVT/POSITIVT
 let convert = document.getElementById("convert");
 
 convert.addEventListener("click", (event) => {
 	stack[0] *= -1;
-
 });
 
 
