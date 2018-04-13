@@ -110,6 +110,18 @@ const doOutput = () => {
 	let disText = text.substring(0, 20);
 	output.value = disText;
 };
+let theme   = document.getElementById("link");
+let themeNr = 1;
+
+function changeTheme() {
+	if (themeNr === 1) {
+		themeNr = 0;
+		theme.setAttribute("href", "theme2.css");
+	} else if (themeNr === 0) {
+		themeNr = 1;
+		theme.setAttribute("href", "style.css");
+	}
+};
 
 
 
