@@ -29,6 +29,7 @@ calculator.addEventListener ("click", (e)=> {
 		// console.log(stack);
 	} else if (btn ===  document.getElementById("plus")) {
         operand.push(+stack.join(""));
+        display.innerHTML = stack[0];
         stack = [];
 		operand.push("+");
 		console.log(operand);
@@ -51,8 +52,13 @@ calculator.addEventListener ("click", (e)=> {
 		operand.push("/");
 		console.log(operand);
 
+	} else if (btn === document.getElementById("Pi")) {
+		stack.push(3.14159265359);
+		// console.log(stack);
+
+
 	/*} else if (btn ===  document.getElementById("comma")) {
-        operand.push(+stack.join(""));
+        operand.push(+stack.join("")); 
 		operand.push(".");		
         stack = [];
 		console.log(operand); */
@@ -64,6 +70,12 @@ calculator.addEventListener ("click", (e)=> {
 		stack = [];
 		operand.push(3.14159265359);
 		console.log(operand); */
+
+	} else if (btn === document.getElementById("potency")) {
+		operand.push(+stack.join(""));
+		stack = [];
+		operand.push("^");
+		console.log(operand);
 
 
     // NOLLSTÄLLER MINIRÄKNAREN
@@ -85,10 +97,12 @@ calculator.addEventListener ("click", (e)=> {
 		let answer = eval(tempString);
 		// console.log(answer);
 		stack.push(answer);
-		if (btn != reset) {
-	} 
-	doOutput();
-}});
+	}
+	if (btn != reset) {
+		doOutput();
+	}
+});
+
 
 // HÄNGER IHOP MED FUNKTIONEN OVAN OCH GÖR SÅ ATT SAKER VISAS.
 const doOutput = () => {

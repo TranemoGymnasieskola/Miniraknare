@@ -8,7 +8,7 @@ h1 {
 }
 
 #calculator {
-	background-color: #2a8270;
+    background-color: #2a8270;
     border: 3px solid;
     border-color: #2a8270;
     position: absolute;
@@ -23,8 +23,8 @@ h1 {
     outline: 2px solid #236d5e;
 }
 output {
-	grid-column: 1 / 5;
-	text-align: right;
+	  grid-column: 1 / 5;
+	  text-align: right;
     border: 3px solid;
     border-color: #38594c;
     width: 294.5px;
@@ -37,7 +37,7 @@ output {
 #equal {
     grid-column: 4;
     grid-row: 6;
-    background-color: orange;
+    background-color: #303030;
     font-size: 17px;
     color: #515151;
 }
@@ -45,25 +45,25 @@ output {
 #division {
     grid-column: 4;
     grid-row: 2;
-    background-color: orange;
+    background-color: #303030;
 }
 
 #plus {
     grid-column: 4;
     grid-row: 5;
-    background-color: orange;
+    background-color: #303030;
 }
 
 #minus {
     grid-column: 4;
     grid-row: 4;
-    background-color: orange;
+    background-color: #303030;
 }
 
 #multiplication {
     grid-column: 4;
     grid-row: 3;
-    background-color: orange;
+    background-color: #303030;
     font-size: 17px;
     color: #515151;
 }
@@ -71,33 +71,36 @@ output {
 #transform {
     grid-column: 3;
     grid-row: 6;
+    background-color: #303030;
 }
 
 #comma {
     grid-column: 1;
     grid-row: 6;
     font-size: 17px;
+    background-color: #303030;
 }
 
 
 #reset {
     grid-column: 3;
     grid-row: 2;
-    background-color: #abb2b9;
+    background-color: #303030;
     color: #fff;
+
 }
 
 #potency {
     grid-column: 2;
     grid-row: 2;
-    background-color: #abb2b9;
+    background-color: #303030;
     color: #fff;
 }
 
 #Pi {
     grid-column: 1;
     grid-row: 2;
-    background-color: #abb2b9;
+    background-color: #303030;
     color: #fff;
     font-size: 12px;
 }
@@ -142,6 +145,5 @@ output {
   grid-column: 2;
   grid-row: 6;
 }
-
 
 
