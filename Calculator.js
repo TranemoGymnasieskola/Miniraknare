@@ -57,24 +57,17 @@ calculator.addEventListener ("click", (e)=> {
 		// console.log(stack);
 
 
-	/*} else if (btn ===  document.getElementById("comma")) {
-        operand.push(+stack.join("")); 
-		operand.push(".");		
+	/* } else if (btn ===  document.getElementById("comma")) {
+        operand.push(+stack.join("")); 	
         stack = [];
-		console.log(operand); */
-
-
-
-    /*}else if (btn === document.getElementById("Pi")) {
-		//operand.push(+stack.join(""));
-		stack = [];
-		operand.push(3.14159265359);
-		console.log(operand); */
+        stack.push(".");	
+		console.log(operand);  */
+		
 
 	} else if (btn === document.getElementById("potency")) {
 		operand.push(+stack.join(""));
 		stack = [];
-		operand.push("^");
+		operand.push("**");
 		console.log(operand);
 
 

@@ -1,0 +1,128 @@
+/*body {
+	background-color: #685f5f;
+} */
+
+h1 {
+    text-decoration: underline;
+}
+
+#calculator {
+    border: 3px solid;
+    position: absolute;
+    left: 34%;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(1,auto);
+    box-shadow: 0px 9px 12px;
+    /* outline: 2px solid #236d5e; */
+}
+output {
+	  grid-column: 1 / 5;
+	  text-align: right;
+    border: 3px solid;
+    width: 294.5px;
+    height: 60px;
+    font-size: 25px;
+}
+
+#equal {
+    grid-column: 4;
+    grid-row: 6;
+    font-size: 17px;
+}
+
+#division {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#plus {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#minus {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#multiplication {
+    grid-column: 4;
+    grid-row: 3;
+    font-size: 17px;
+}
+
+#convert {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+#comma {
+    grid-column: 1;
+    grid-row: 6;
+    font-size: 17px;
+}
+
+
+#reset {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#potency {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#Pi {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 12px;
+}
+
+#n7 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#n8 {
+  grid-column: 2;
+  grid-row: 3;
+}
+#n9 {
+  grid-column: 3;
+  grid-row: 3;
+}
+#n4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+#n5 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#n6 {
+  grid-column: 3;
+  grid-row: 4;
+}
+#n1 {
+  grid-column: 1;
+  grid-row: 5;
+}
+#n2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+#n3 {
+  grid-column: 3;
+  grid-row: 5;
+}
+#n0 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+
+

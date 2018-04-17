@@ -1,110 +1,156 @@
 body {
-	background-color: #685f5f;
+	background-color: #332e2e;
 }
 
 h1 {
-    text-decoration: underline;
     color: white;
 }
 
 #calculator {
-    background-color: #2a8270;
-    border: 3px solid;
-    border-color: #2a8270;
-    position: absolute;
-    left: 34%;
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(1,auto);
-    box-shadow: 0px 9px 12px;
-    outline: 2px solid #236d5e;
+    background-color: #3a3442;
+    border-color: #3a3442;
+    outline: 2px solid #303030;
 }
 output {
-	  grid-column: 1 / 5;
-	  text-align: right;
-    border: 3px solid;
-    border-color: #38594c;
-    width: 294.5px;
-    height: 60px;
-    background-color: #a2d9ce;
-    outline: 3px solid #2a8270;
-    font-size: 25px;
-}
+    border-color: #1d1628;
+    background-color: #303030;
+    outline: 3px solid #3a3442;
+    color: #d69ae2;
+} 
 
 #equal {
-    grid-column: 4;
-    grid-row: 6;
     background-color: #303030;
-    font-size: 17px;
-    color: #515151;
+    color: #4f4c4b;
+    border: 2px solid orange;
 }
+
+#equal:hover {
+  background-color: #ff9400;
+  color: #fff;
+  border: 2px solid #ffae4c;
+}
+
 
 #division {
-    grid-column: 4;
-    grid-row: 2;
     background-color: #303030;
+    color: orange;
+    border: 2px solid orange;
 }
+
+#division:hover {
+  background-color: #ff9400;
+  border: 2px solid #ffae4c;
+}
+
 
 #plus {
-    grid-column: 4;
-    grid-row: 5;
     background-color: #303030;
+    color: orange;
+    border: 2px solid orange;
 }
+
+#plus:hover {
+  background-color: #ff9400;
+  border: 2px solid #ffae4c;
+}
+
 
 #minus {
-    grid-column: 4;
-    grid-row: 4;
     background-color: #303030;
+    color: orange;
+    border: 2px solid orange;
 }
+
+#minus:hover {
+  background-color: #ff9400;
+  border: 2px solid #ffae4c;
+}
+
 
 #multiplication {
-    grid-column: 4;
-    grid-row: 3;
     background-color: #303030;
-    font-size: 17px;
-    color: #515151;
+    color: #4f4c4b;
+    border: 2px solid orange;
 }
 
-#transform {
-    grid-column: 3;
-    grid-row: 6;
-    background-color: #303030;
+#multiplication:hover {
+  background-color: #ff9400;
+  border: 2px solid #ffae4c;
 }
+
+
+#convert {
+    background-color: #303030;
+    border: 2px solid #25e217;
+    color: white;
+}
+
+#convert:hover {
+  background-color: #00ff5c;
+  border: 3px solid #87ffb2;
+}
+
 
 #comma {
-    grid-column: 1;
-    grid-row: 6;
-    font-size: 17px;
     background-color: #303030;
+    border: 2px solid #25e217;
+    color: white;
+}
+
+#comma:hover {
+  background-color: #00ff5c;
+  border: 3px solid #87ffb2;
 }
 
 
 #reset {
-    grid-column: 3;
-    grid-row: 2;
     background-color: #303030;
     color: #fff;
-
+    border: 2px solid #25e217;
 }
+
+#reset:hover {
+  background-color: #00ff5c;
+  border: 3px solid #87ffb2;
+}
+
 
 #potency {
-    grid-column: 2;
-    grid-row: 2;
     background-color: #303030;
     color: #fff;
+    border: 2px solid #25e217;
 }
+
+#potency:hover {
+  background-color: #00ff5c;
+  border: 3px solid #87ffb2;
+}
+
 
 #Pi {
-    grid-column: 1;
-    grid-row: 2;
     background-color: #303030;
     color: #fff;
-    font-size: 12px;
+    border: 2px solid #25e217;
 }
 
+#Pi:hover {
+  background-color: #00ff5c;
+  border: 3px solid #87ffb2;
+}
+
+
+button {
+  background-color: #303030;
+  border: 2px solid #3718e2;
+  color: #2f54d8;
+}
+
+button:hover {
+  background-color: #1f75b7;
+  color: #fff;
+  border: 2px solid #4ec2c4;
+}
+/*
 #n7 {
   grid-column: 1;
   grid-row: 3;
@@ -146,4 +192,5 @@ output {
   grid-row: 6;
 }
 
+*/
 
