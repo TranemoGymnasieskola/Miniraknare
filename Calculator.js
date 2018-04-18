@@ -32,43 +32,41 @@ calculator.addEventListener ("click", (e)=> {
         display.innerHTML = stack[0];
         stack = [];
 		operand.push("+");
-		console.log(operand);
+		// console.log(operand);
 
 	} else if (btn ===  document.getElementById("minus")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("-");
-		console.log(operand);
+		// console.log(operand);
 
 	} else if (btn ===  document.getElementById("multiplication")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("*");
-		console.log(operand);
+		// console.log(operand);
 
 	} else if (btn ===  document.getElementById("division")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("/");
-		console.log(operand);
+		// console.log(operand);
 
 	} else if (btn === document.getElementById("Pi")) {
 		stack.push(3.14159265359);
 		// console.log(stack);
 
 
-	/* } else if (btn ===  document.getElementById("comma")) {
-        operand.push(+stack.join("")); 	
-        stack = [];
+	} else if (btn ===  document.getElementById("comma")) {
         stack.push(".");	
-		console.log(operand);  */
+		//console.log(operand);  
 		
 
 	} else if (btn === document.getElementById("potency")) {
 		operand.push(+stack.join(""));
 		stack = [];
 		operand.push("**");
-		console.log(operand);
+		// console.log(operand);
 
 
     // NOLLSTÄLLER MINIRÄKNAREN
@@ -86,7 +84,7 @@ calculator.addEventListener ("click", (e)=> {
         operand.push(+stack.join(""));
         stack = [];
         let tempString = operand.join("");
-		console.log(tempString);
+		//console.log(tempString);
 		let answer = eval(tempString);
 		// console.log(answer);
 		stack.push(answer);
