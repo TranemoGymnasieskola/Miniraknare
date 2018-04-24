@@ -23,7 +23,7 @@ let operand = [];
 //let comma = [];
 
 // GÖR SÅ ATT DET DYKER UPP EN SIFFRA NÄR MAN TRYCKER PÅ DEN OCH ATT TALEN BERÄKNAS.
-calculator.addEventListener ("click", (e)=> {
+calculator.addEventListener("click", (e)=> {
 	let btn = e.target;
 	// console.log(btn);
 	if (btn.className === "number") {
@@ -91,7 +91,7 @@ calculator.addEventListener ("click", (e)=> {
 		// console.log(answer);
 		stack.push(answer);
 	}
-	if (btn != reset) {
+	if (btn != reset && btn != document.getElementById("display")) {
 		doOutput();
 	}
 });
@@ -107,8 +107,9 @@ const doOutput = () => {
 
 
 
+
 theme.addEventListener("click", (e) => {
-style.removeAttribute("disabled");
+	e.removeAttribute("disabled");
 });
 
 /* function changeTheme() {
