@@ -1,5 +1,6 @@
 const calculator = document.getElementById("calculator");
 const display    = document.getElementById("display");
+const theme      = document.getElementById("changeTheme");
 
 // SKAPAR SIFFRORNA
 for (let i=0; i<10; i++) {
@@ -101,10 +102,17 @@ const doOutput = () => {
 	let disText = text.substring(0, 20);
 	output.value = disText;
 };
-let theme   = document.getElementById("link");
-let themeNr = 1;
+/*let theme   = document.getElementById("link");
+let themeNr = 1; */
 
-function changeTheme() {
+
+let theme = document.getElementById("changeTheme");
+
+theme.addEventListener("click", (e) => {
+removeAttribute("disabled");
+});
+
+/* function changeTheme() {
 	if (themeNr === 1) {
 		themeNr = 0;
 		theme.setAttribute("href", "theme2.css");
@@ -112,10 +120,12 @@ function changeTheme() {
 		themeNr = 1;
 		theme.setAttribute("href", "style.css");
 	}
-};
+}; */
 
 
-
+/*window.onload = function() {
+	document.getElementById("style").removeAttribute("disabled");
+} */
 
 /* Ex. 3,2,1 behöver bli 321
 
@@ -144,17 +154,6 @@ Måste kunna hantera var
 */
 
 
-
-
-// NOLLSTÄLLER MINIRÄKNAREN
-/*let reset = document.getElementById("reset");
-
-reset.addEventListener("click", (e) => {
-	stack = [];
-	operand = [];
-	display.innerHTML = "0";
-});
-*/
 
 
 // ÄNDRAR TALET TILL ATT VARA NEGATIVT/POSITIVT
