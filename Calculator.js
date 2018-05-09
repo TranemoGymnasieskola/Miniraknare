@@ -1,7 +1,8 @@
 const calculator = document.getElementById("calculator");
 const display    = document.getElementById("display");
-const theme      = document.getElementById("changeTheme");
+/*const theme      = document.getElementById("changeTheme");
 const style      = document.getElementById("theme2");
+const style2     = document.getElementById("style"); */
 
 // SKAPAR SIFFRORNA
 for (let i=0; i<10; i++) {
@@ -108,9 +109,18 @@ const doOutput = () => {
 
 
 
-theme.addEventListener("click", (e) => {
-	e.removeAttribute("disabled");
-});
+/*theme.addEventListener("click", (e) => {
+
+	style2.disabled = false;
+});*/
+
+function btnTheme1() {
+	document.getElementById("theme2").disabled = false;
+};
+
+function btnTheme2() {
+	document.getElementById("theme2").disabled = true;
+};
 
 /* function changeTheme() {
 	if (themeNr === 1) {
