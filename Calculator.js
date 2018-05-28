@@ -35,7 +35,7 @@ calculator.addEventListener("click", (e)=> {
         display.innerHTML = stack[0];
         stack = [];
 		operand.push("+");
-		// console.log(operand);
+		console.log(operand);
 
 	} else if (btn ===  document.getElementById("minus")) {
         operand.push(+stack.join(""));
@@ -89,9 +89,30 @@ calculator.addEventListener("click", (e)=> {
         let tempString = operand.join("");
 		//console.log(tempString);
 		let answer = eval(tempString);
-		// console.log(answer);
+		console.log(answer);
 		stack.push(answer);
+		operand = [];
+
+
+	} else if (btn === document.getElementById("ln")) {
+		operand.push(+stack.join(""));
+		stack = [];
+		operand.push("Math.log(");
+		// console.log(operand);
+	} else if (btn === document.getElementById("(")) {
+		operand.push(+stack.join(""));
+		stack = [];
+		operand.push("(");
+		// console.log(operand);
+
+	}else if (btn === document.getElementById(")")) {
+		operand.push(+stack.join(""));
+		stack = [];
+		operand.push(")");
+		// console.log(operand);
+
 	}
+
 	if (btn != reset && btn != document.getElementById("display")) {
 		doOutput();
 	}

@@ -18,6 +18,10 @@ output {
     color: #d69ae2;
 } 
 
+.op {
+  background-color: orange;
+}
+
 #equal {
     background-color: #303030;
     color: #4f4c4b;

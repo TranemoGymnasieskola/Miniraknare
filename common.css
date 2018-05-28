@@ -28,6 +28,11 @@ output {
     font-size: 25px;
 }
 
+.op {
+  background-color: orange;
+}
+
+
 #equal {
     grid-column: 4;
     grid-row: 6;
