@@ -34,26 +34,25 @@ calculator.addEventListener("click", (e)=> {
         operand.push(+stack.join(""));
         display.innerHTML = stack[0];
         stack = [];
-		operand.push("+");
-		console.log(operand);
+		operand.push("+");console.log(operand);
 
 	} else if (btn ===  document.getElementById("minus")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("-");
-		// console.log(operand);
+		console.log(operand);
 
 	} else if (btn ===  document.getElementById("multiplication")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("*");
-		// console.log(operand);
+		console.log(operand);
 
 	} else if (btn ===  document.getElementById("division")) {
         operand.push(+stack.join(""));
         stack = [];
 		operand.push("/");
-		// console.log(operand);
+		console.log(operand);
 
 	} else if (btn === document.getElementById("Pi")) {
 		stack.push(3.14159265359);
@@ -62,14 +61,14 @@ calculator.addEventListener("click", (e)=> {
 
 	} else if (btn ===  document.getElementById("comma")) {
         stack.push(".");	
-		//console.log(operand);  
+	console.log(operand);  
 		
 
 	} else if (btn === document.getElementById("potency")) {
 		operand.push(+stack.join(""));
 		stack = [];
 		operand.push("**");
-		// console.log(operand);
+		console.log(operand);
 
 
     // NOLLSTÄLLER MINIRÄKNAREN
@@ -84,7 +83,9 @@ calculator.addEventListener("click", (e)=> {
 
 
 	} else if (btn === document.getElementById("equal")) {
-        operand.push(+stack.join(""));
+        if(stack.length !== 0 && stack[0] !== 0 && stack[0] !== NaN) {
+        	operand.push(+stack.join(""));
+        }
         stack = [];
         let tempString = operand.join("");
 		//console.log(tempString);
@@ -95,21 +96,24 @@ calculator.addEventListener("click", (e)=> {
 
 
 	} else if (btn === document.getElementById("ln")) {
-		operand.push(+stack.join(""));
-		stack = [];
+		// operand.push(+stack.join(""));
+		// stack.push(')');
 		operand.push("Math.log(");
-		// console.log(operand);
-	} else if (btn === document.getElementById("(")) {
-		operand.push(+stack.join(""));
-		stack = [];
-		operand.push("(");
-		// console.log(operand);
+		console.log(operand);
 
-	}else if (btn === document.getElementById(")")) {
+
+	} else if (btn === document.getElementById("(")) {
+		// operand.push(+stack.join(""));
+		// stack.push('(');
+		operand.push("(");
+		console.log(operand);
+
+
+	} else if (btn === document.getElementById(")")) {
 		operand.push(+stack.join(""));
 		stack = [];
 		operand.push(")");
-		// console.log(operand);
+		console.log(operand);
 
 	}
 
